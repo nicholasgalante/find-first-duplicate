@@ -4,6 +4,7 @@ test('can handle an empty array', () => {
   expect(findFirstDuplicate([])).toBe(-1);
 }); 
 
+
 test('can handle an array containing one element', () => {
   expect(findFirstDuplicate([4])).toBe(-1);
 });
