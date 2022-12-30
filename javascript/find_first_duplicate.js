@@ -1,17 +1,29 @@
 
 
-function findFirstDuplicate(array) {
+// function findFirstDuplicate(array) {
+//   const newArray = [];
+//   for (i=0; i<array.length; i++){
+//     if (newArray.includes(array[i])){
+//       return array[i]
+//     } else {
+//       newArray.push(array[i])
+//     }
+//   }
+//   return -1;
+// }
+
+
+function findFirstDuplicate(array){
   const newArray = [];
-  for (i=0; i<array.length; i++){
-    if (newArray.includes(array[i])){
-      return array[i]
+  for (const value of array) {
+    if (newArray.includes(value)){
+      return value
     } else {
-      newArray.push(array[i])
+      newArray.push(value)
     }
   }
   return -1;
 }
-
 
 
 
